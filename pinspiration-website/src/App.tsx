@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Instagram, Music, ShoppingBag, MessageSquare, Menu, X, Sparkles, Star } from 'lucide-react';
 
 export default function Pinspiration() {
