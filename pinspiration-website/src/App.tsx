@@ -16,13 +16,7 @@ export default function Pinspiration() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-sky-50 to-yellow-50" style={{fontFamily: "'Poppins', 'Segoe UI', system-ui, sans-serif"}}>
-      {/* Animated background elements */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-        <div className="absolute top-40 right-10 w-96 h-96 bg-gradient-to-br from-yellow-400 to-amber-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{animationDelay: '700ms'}}></div>
-        <div className="absolute -bottom-20 left-1/3 w-96 h-96 bg-gradient-to-br from-sky-400 to-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{animationDelay: '1400ms'}}></div>
-      </div>
+    <div className="min-h-screen bg-blue-50" style={{fontFamily: "'Poppins', 'Segoe UI', system-ui, sans-serif"}}>
 
       {/* Header */}
       <header className="bg-white/90 backdrop-blur-xl shadow-xl sticky top-0 z-50 border-b-2 border-blue-200">
