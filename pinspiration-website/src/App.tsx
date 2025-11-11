@@ -1,12 +1,11 @@
 import { useState } from 'react';
-import { Instagram, Music, ShoppingBag, MessageSquare, Menu, X, Sparkles } from 'lucide-react';
+import { Instagram, Music, ShoppingBag, MessageSquare, Menu, X } from 'lucide-react';
 
 // Import images
 import layanImg from '/img/Cinnamoroll with glasses.jpg';
 import marwaImg from '/img/download.jpg';
 import halaImg from '/img/HelloKitty.jpg';
 import youmnaImg from '/img/kuromi plush.jpg';
-import logoImg from '/img/Pinspiration.png';
 
 export default function Pinspiration() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -89,7 +88,7 @@ export default function Pinspiration() {
           Design Your<br />Perfect Button
         </h2>
         <p className="text-xl text-gray-700 mb-16 max-w-3xl mx-auto leading-relaxed">
-          Turn any design into a stunning custom button. Perfect for bags, jackets, and showing off your unique style. 🎨
+          Turn any design into a stunning custom button. Perfect for bags, jackets, and showing off your unique style.
         </p>
         
         {/* Pricing Cards */}
