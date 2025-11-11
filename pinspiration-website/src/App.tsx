@@ -6,6 +6,7 @@ import layanImg from '/img/Cinnamoroll with glasses.jpg';
 import marwaImg from '/img/download.jpg';
 import halaImg from '/img/HelloKitty.jpg';
 import youmnaImg from '/img/kuromi plush.jpg';
+import logoImg from '/img/Pinspiration.png';
 
 export default function Pinspiration() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -22,9 +23,6 @@ export default function Pinspiration() {
       <header className="bg-white/90 backdrop-blur-xl shadow-xl sticky top-0 z-50 border-b-2 border-blue-200">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between relative">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-amber-500 to-yellow-400 rounded-xl flex items-center justify-center shadow-lg transform rotate-12">
-              <Sparkles className="w-6 h-6 text-white transform -rotate-12" />
-            </div>
             <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
               Pinspiration
             </h1>
