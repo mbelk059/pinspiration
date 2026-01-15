@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { Instagram, Music, ShoppingBag, MessageSquare, Menu, X } from 'lucide-react';
 
 // Import images
-import layanImg from '/img/Cinnamoroll with glasses.jpg';
-import marwaImg from '/img/download.jpg';
-import halaImg from '/img/HelloKitty.jpg';
-import youmnaImg from '/img/kuromi plush.jpg';
+import layanImg from '/img/IMG_2787.jpeg';
+import marwaImg from '/img/IMG_2788.jpeg';
+import halaImg from '/img/IMG_2785.jpeg';
+import youmnaImg from '/img/IMG_2786.jpeg';
 
 export default function Pinspiration() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -164,17 +164,22 @@ export default function Pinspiration() {
           <h3 className="text-6xl font-bold mb-14 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">Meet the Team</h3>
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { name: 'Marwa', role: 'VP of Finance', gradient: 'from-blue-500 to-cyan-500', img: marwaImg},
-              { name: 'Layan', role: 'VP of Marketing', gradient: 'from-cyan-500 to-sky-500', img: layanImg},
-              { name: 'Hala', role: 'VP of Production', gradient: 'from-yellow-500 to-amber-500', img: halaImg},
-              { name: 'Youmna', role: 'VP of Design', gradient: 'from-amber-500 to-blue-500', img: youmnaImg}
+              { name: 'Marwa', role: 'VP of Finance', gradient: 'from-blue-500 to-cyan-500', img: marwaImg, bio: "Hey everyone! My name is Marwa, I am a grade 9 student at ldhss. I enjoy math and working with numbers, which really helps me as the vp of finance!"},
+              { name: 'Layan', role: 'VP of Marketing', gradient: 'from-cyan-500 to-sky-500', img: layanImg, bio: "Hey everyone! My name is Layan, I am a grade 9 student at ldhss. I love connecting with people and spreading the word about our products, which is perfect for my role as vp of marketing!"},
+              { name: 'Hala', role: 'VP of Production', gradient: 'from-yellow-500 to-amber-500', img: halaImg, bio: "Hey everyone! My name is Hala, I am a grade 9 student at ldhss. I'm super organized and love bringing ideas to life, which makes me great at managing production as vp of production!"},
+              { name: 'Youmna', role: 'VP of Design', gradient: 'from-amber-500 to-blue-500', img: youmnaImg, bio: "Hey everyone! My name is Youmna, I am a grade 9 student at ldhss. I enjoy drawing and doing artsy things. I particularly love doing digital art, this really helps me as the vp of design!"}
             ].map((member) => (
-              <div key={member.name} className="bg-white/90 backdrop-blur-xl rounded-3xl p-10 shadow-2xl border-3 border-blue-200 hover:border-blue-400 transition-all duration-300 hover:scale-105 group">
+              <div key={member.name} className="bg-white/90 backdrop-blur-xl rounded-3xl p-10 shadow-2xl border-3 border-blue-200 hover:border-blue-400 transition-all duration-300 hover:scale-105 group relative">
                 <div className={`w-36 h-36 bg-gradient-to-br ${member.gradient} rounded-3xl mx-auto mb-6 overflow-hidden shadow-xl group-hover:scale-110 transition-transform duration-300`}>
                   <img src={member.img} alt={member.name} className="w-full h-full object-cover" />
                 </div>
                 <h4 className="font-semibold text-3xl mb-3 text-gray-900">{member.name}</h4>
                 <p className="text-base text-gray-600">{member.role}</p>
+                
+                {/* Hover Bio */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-3xl p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <p className="text-white text-base leading-relaxed text-center">{member.bio}</p>
+                </div>
               </div>
             ))}
           </div>
