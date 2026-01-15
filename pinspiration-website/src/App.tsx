@@ -184,7 +184,7 @@ export default function Pinspiration() {
             ))}
           </div>
           <p className="mt-12 text-gray-700 max-w-3xl mx-auto text-xl leading-relaxed">
-            We're a Grade 9 business class team bringing custom button designs to life. <br />Proceeds support CHEO. 💙
+            We're a Grade 9 business class team bringing custom button designs to life. <br />Proceeds support CHEO.💙
           </p>
         </div>
 
